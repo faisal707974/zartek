@@ -1,0 +1,37 @@
+.quantityBtn {
+    margin: 15px;
+
+    span {
+        display: inline-block;
+        background-color: green;
+        color: white;
+        width: 50px;
+        text-align: center;
+        padding: 5px;
+        font-size: 16pt;
+    }
+
+    span:first-child {
+        border-radius: 20px 0 0 20px;
+        cursor: pointer;
+        user-select: none;
+
+        &:active {
+            font-size: 14pt;
+        }
+    }
+
+    span:nth-child(2) {
+        user-select: none;
+    }
+
+    span:last-child {
+        border-radius: 0 20px 20px 0;
+        cursor: pointer;
+        user-select: none;
+
+        &:active {
+            font-size: 14pt;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.category {
+    .heading {
+        width: 100%;
+        overflow: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        ul {
+            list-style: none;
+            display: inline-flex;
+            font-weight: bold;
+            padding: 0;
+            
+            li {
+                width: 250px !important;
+                text-align: center;
+                user-select: none;
+                cursor: pointer;
+                border-bottom: 2px solid gray;
+                padding: 0 0 10px 0;
+            }
+
+            .active{
+                color: red;
+                border-bottom: 2px solid red;
+            }
+        }
+    }
+}

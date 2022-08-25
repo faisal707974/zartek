@@ -1,0 +1,47 @@
+.header {
+    .title {
+        display: inline-block;
+        margin: 20px;
+
+        h1 {
+            width: fit-content;
+            font-size: 22pt;
+        }
+    }
+
+    .options {
+        display: block;
+        float: right;
+
+        ul {
+            list-style: none;
+            display: flex;
+            margin: 27px 0;
+            padding: 0;
+
+            li {
+                width: 80px;
+                text-align: center;
+                user-select: none;
+                cursor: pointer;
+
+                i {
+                    font-size: x-large;
+                }
+            }
+
+            span {
+                position: relative;
+                background-color: red;
+                color: white;
+                width: 20px;
+                height: 20px;
+                font-size: 10pt;
+                text-align: center;
+                top: -9px;
+                left: -33px;
+                border-radius: 50%;
+            }
+        }
+    }
+}

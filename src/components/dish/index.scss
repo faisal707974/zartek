@@ -1,0 +1,85 @@
+.dish {
+    display: flex;
+    min-height: 100px;
+    border-bottom: 1px solid rgb(197, 194, 194);
+    padding: 20px 0;
+    margin: 0 50px;
+
+    .type {
+        width: 5%;
+        display: flex;
+        justify-content: left;
+
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    .details {
+
+        p {
+            margin-bottom: 0;
+
+            &[data-availability=false] {
+                color: red;
+                font-weight: bold;
+            }
+        }
+
+    }
+
+    @media (max-width:800px) {
+        .type {
+            img {
+                position: relative;
+                left: -20px;
+            }
+        }
+
+        .details {
+            width: 75%;
+        }
+
+        .calory {
+            position: relative;
+            width: 0%;
+
+            p {
+                position: absolute;
+                top: -6px;
+                left: -110px;
+                width: 100px;
+            }
+        }
+    }
+
+    @media (min-width:800px) {
+        .details {
+            width: 55%
+        }
+
+        .calory {
+            width: 20%
+        }
+    }
+
+    .calory {
+        font-weight: bold;
+        text-align: center;
+        margin-top: 35px;
+    }
+
+    .image {
+        width: 20%;
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+    }
+}
